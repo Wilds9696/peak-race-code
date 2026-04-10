@@ -51,7 +51,7 @@ def draw_track(pos1, pos2, name1, name2, prog1, prog2):
 
     header = clr("=" * 62, "bold", "white")
     lines.append(header)
-    lines.append(clr("  🏁  BALAPAN TERMINAL : MBG CARRY  vs  MOBIL F1  🏁", "bold", "yellow"))
+    lines.append(clr("  🏁  BALAPAN TERMINAL : MOBIL MBG  vs  MOBIL F1  🏁", "bold", "yellow"))
     lines.append(header)
     lines.append("")
 
@@ -164,7 +164,7 @@ def race():
         clear()
         print(draw_track(
             int(pos1), int(pos2),
-            "MBG CARRY", "MOB F1 ",
+            "MOBIL MBG", "MOB F1 ",
             prog1, prog2
         ))
 
@@ -182,7 +182,7 @@ def race():
     print("\n" + clr("=" * 62, "bold", "white"))
 
     if winner == 1:
-        print(clr("  🏆  PEMENANG :  MBG CARRY (SUZUKI)  🏆", "bold", "yellow"))
+        print(clr("  🏆  PEMENANG :  MOBIL MBG (SUZUKI)  🏆", "bold", "yellow"))
         trophy = r"""
          ___________
         '._==_==_=_.'
@@ -221,7 +221,7 @@ def race():
     print(clr("  Hasil Akhir:", "bold", "white"))
     print("")
 
-    for line in car_carry("MBG CARRY"):
+    for line in car_carry("MOBIL MBG"):
         print(clr("    " + line, "yellow"))
     print(clr(f"    Progress: {prog1:.1f}%", "yellow"))
     print("")
