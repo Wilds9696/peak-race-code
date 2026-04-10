@@ -20,7 +20,7 @@ def car_carry(label="MBG (CARRY)"):
     bot  = "|~∿∿@∿∿∿∿∿@∿~|)"
     return [top, mid, bot]
 
-def car_f1(label="  MOB F1  "):
+def car_f1(label="  MOBIL F1  "):
     w = max(len(label), 9)
     top  = "  __" + "_" * w + "___  "
     mid  = "=| " + label.center(w) + "  |>"
@@ -164,7 +164,7 @@ def race():
         clear()
         print(draw_track(
             int(pos1), int(pos2),
-            "MOBIL MBG", "MOB F1 ",
+            "MOBIL MBG", "MOBIL F1 ",
             prog1, prog2
         ))
 
@@ -225,7 +225,7 @@ def race():
         print(clr("    " + line, "yellow"))
     print(clr(f"    Progress: {prog1:.1f}%", "yellow"))
     print("")
-    for line in car_f1("MOB F1"):
+    for line in car_f1("MOBIL F1"):
         print(clr("    " + line, "cyan"))
     print(clr(f"    Progress: {prog2:.1f}%", "cyan"))
 
